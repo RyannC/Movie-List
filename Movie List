@@ -1,0 +1,35 @@
+movieList = []
+toContinue = True
+
+while toContinue == True:
+  itemToAdd = input("what movies do you want to watch?")
+  movieList.append(itemToAdd)
+  print(movieList)
+  
+  def numberOfMovies(movieList):
+    total = len(movieList)
+    return total
+    
+  moviesInList = numberOfMovies(movieList)
+  
+  choice = input("if you want to keep adding movies, type 'k'. If you want to delete watched movies type 'e'. If you want to finish, type 'done'.")
+  if choice == "k":
+    toContinue = True
+  if choice == "e":
+    toContinue = False
+    print(movieList)
+  if choice == "done":
+    print(movieInList):
+    break
+  while toContinue == False:
+    movieWatched = input ("Type name of the movie you want to delete.")
+    movieList.remove(movieWatched)
+    print(movieList)
+    choice2 = input("if you want to keep deleting movies, type 'd'. If you want to add movies type 'a'. If you are finished, type 'done'. ")
+    if choice2 == "d":
+      toContinue = False
+    if choice2 == "a":
+      toContinue = True
+    if choice2 == 'done':
+      print(moviesInList)
+      break
